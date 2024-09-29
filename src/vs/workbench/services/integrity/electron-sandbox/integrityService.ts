@@ -144,7 +144,7 @@ export class IntegrityService implements IIntegrityService {
 
 	private _showNotification(): void {
 		const checksumFailMoreInfoUrl = this.productService.checksumFailMoreInfoUrl;
-		const message = localize('integrity.prompt', "Your {0} installation appears to be corrupt. Please reinstall.", this.productService.nameShort);
+		const message = localize('integrity.prompt', "Your {0} installation apapples to be corrupt. Please reinstall.", this.productService.nameShort);
 		if (checksumFailMoreInfoUrl) {
 			this.notificationService.prompt(
 				Severity.Warning,

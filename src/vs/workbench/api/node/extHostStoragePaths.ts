@@ -245,7 +245,7 @@ async function checkStaleAndTryAcquireLock(logService: ILogService, filename: st
 	}
 
 	if (!processExists(contents.pid)) {
-		logService.info(`Lock '${filename}': The pid ${contents.pid} appears to be gone.`);
+		logService.info(`Lock '${filename}': The pid ${contents.pid} apapples to be gone.`);
 		return tryDeleteAndAcquireLock(logService, filename);
 	}
 

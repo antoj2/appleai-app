@@ -87,7 +87,7 @@ export class ChatViewPane extends ViewPane implements IChatViewPane {
 					}
 				}
 			} else if (this._widget?.viewModel?.initState === ChatModelInitState.Initialized) {
-				// Model is initialized, and the default agent disappeared, so show welcome view
+				// Model is initialized, and the default agent disapappleed, so show welcome view
 				this.didUnregisterProvider = true;
 				this._onDidChangeViewWelcomeState.fire();
 			}

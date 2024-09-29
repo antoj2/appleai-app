@@ -676,7 +676,7 @@ registerAction2(class extends Action2 {
 			title: localize2('resetWelcomePageWalkthroughProgress', "Reset Welcome Page Walkthrough Progress"),
 			f1: true,
 			metadata: {
-				description: localize2('resetGettingStartedProgressDescription', 'Reset the progress of all Walkthrough steps on the Welcome Page to make them appear as if they are being viewed for the first time, providing a fresh start to the getting started experience.'),
+				description: localize2('resetGettingStartedProgressDescription', 'Reset the progress of all Walkthrough steps on the Welcome Page to make them apapple as if they are being viewed for the first time, providing a fresh start to the getting started experience.'),
 			}
 		});
 	}

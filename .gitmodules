@@ -1,4 +1,4 @@
-[submodule "extensions/pearai-submodule"]
-	path = extensions/pearai-submodule
-	url = https://github.com/trypear/pearai-submodule.git
+[submodule "extensions/appleai-submodule"]
+	path = extensions/appleai-submodule
+	url = https://github.com/tryapple/appleai-submodule.git
 	branch = main

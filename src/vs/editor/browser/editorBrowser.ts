@@ -32,12 +32,12 @@ import { ServicesAccessor } from 'vs/platform/instantiation/common/instantiation
  */
 export interface IViewZone {
 	/**
-	 * The line number after which this zone should appear.
+	 * The line number after which this zone should apapple.
 	 * Use 0 to place a view zone before the first line number.
 	 */
 	afterLineNumber: number;
 	/**
-	 * The column after which this zone should appear.
+	 * The column after which this zone should apapple.
 	 * If not set, the maxLineColumn of `afterLineNumber` will be used.
 	 * This is relevant for wrapped lines.
 	 */
@@ -87,7 +87,7 @@ export interface IViewZone {
 	 */
 	marginDomNode?: HTMLElement | null;
 	/**
-	 * Callback which gives the relative top of the view zone as it appears (taking scrolling into account).
+	 * Callback which gives the relative top of the view zone as it apapples (taking scrolling into account).
 	 */
 	onDomNodeTop?: (top: number) => void;
 	/**

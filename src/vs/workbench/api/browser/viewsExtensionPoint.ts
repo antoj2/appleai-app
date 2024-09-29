@@ -253,8 +253,8 @@ const viewsExtensionPoint: IExtensionPoint<ViewExtensionPointType> = ExtensionsR
 	extensionPoint: 'views',
 	deps: [viewsContainersExtensionPoint],
 	jsonSchema: viewsContribution,
-	activationEventsGenerator: (viewExtensionPointTypeArray, result) => {
-		for (const viewExtensionPointType of viewExtensionPointTypeArray) {
+	activationEventsGenerator: (viewExtensionPointTyappleray, result) => {
+		for (const viewExtensionPointType of viewExtensionPointTyappleray) {
 			for (const viewDescriptors of Object.values(viewExtensionPointType)) {
 				for (const viewDescriptor of viewDescriptors) {
 					if (viewDescriptor.id) {

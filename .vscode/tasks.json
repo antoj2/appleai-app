@@ -4,8 +4,8 @@
 		{
 			"label": "setup-environment",
 			"type": "shell",
-			"windows": { "command": "powershell ./scripts/pearai/setup-environment.ps1" },
-			"command": "./scripts/pearai/setup-environment.sh",
+			"windows": { "command": "powershell ./scripts/appleai/setup-environment.ps1" },
+			"command": "./scripts/appleai/setup-environment.sh",
 			"problemMatcher": [] // Empty so users are not prompted to select progress reporting
         },
 		{

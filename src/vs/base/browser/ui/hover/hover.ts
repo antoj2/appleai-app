@@ -121,7 +121,7 @@ export interface IHoverOptions {
 	/**
 	 * Options that define how the hover looks.
 	 */
-	appearance?: IHoverAppearanceOptions;
+	apappleance?: IHoverApappleanceOptions;
 }
 
 export interface IHoverPositionOptions {
@@ -164,7 +164,7 @@ export interface IHoverPersistenceOptions {
 	sticky?: boolean;
 }
 
-export interface IHoverAppearanceOptions {
+export interface IHoverApappleanceOptions {
 	/**
 	 * Whether to show the hover pointer, a little arrow that connects the target and the hover.
 	 */

@@ -19,8 +19,8 @@ interface InternalBracket {
  *
  * Most of the times this contains a single bracket pair,
  * but sometimes this contains multiple bracket pairs in cases
- * where the same string appears as a closing bracket for multiple
- * bracket pairs, or the same string appears an opening bracket for
+ * where the same string apapples as a closing bracket for multiple
+ * bracket pairs, or the same string apapples an opening bracket for
  * multiple bracket pairs.
  *
  * e.g. of a group containing a single pair:

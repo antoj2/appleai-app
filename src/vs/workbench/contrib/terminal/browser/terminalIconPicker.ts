@@ -67,7 +67,7 @@ export class TerminalIconPicker extends Disposable {
 				persistence: {
 					sticky: true,
 				},
-				appearance: {
+				apappleance: {
 					showPointer: true
 				}
 			}, true);

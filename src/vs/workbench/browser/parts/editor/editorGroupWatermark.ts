@@ -26,9 +26,9 @@ interface WatermarkEntry {
 	readonly when?: ContextKeyExpression;
 }
 
-const openPearAIChat: WatermarkEntry = { text: localize('watermark.openPearAIChat', "Open Chat"), id: 'pearai.focusContinueInput', when: ContextKeyExpr.has('pearAIExtensionLoaded') };	 
-const bigChat: WatermarkEntry = { text: localize('watermark.pearAIBigChat', "Big Chat"), id: 'pearai.resizeAuxiliaryBarWidth', when: ContextKeyExpr.has('pearAIExtensionLoaded') };
-const prevChat: WatermarkEntry = { text: localize('watermark.pearAIPrevChat', "Previous Chat"), id: 'pearai.loadRecentChat', when: ContextKeyExpr.has('pearAIExtensionLoaded') };
+const openappleAIChat: WatermarkEntry = { text: localize('watermark.openappleAIChat', "Open Chat"), id: 'appleai.focusContinueInput', when: ContextKeyExpr.has('appleAIExtensionLoaded') };
+const bigChat: WatermarkEntry = { text: localize('watermark.appleAIBigChat', "Big Chat"), id: 'appleai.resizeAuxiliaryBarWidth', when: ContextKeyExpr.has('appleAIExtensionLoaded') };
+const prevChat: WatermarkEntry = { text: localize('watermark.appleAIPrevChat', "Previous Chat"), id: 'appleai.loadRecentChat', when: ContextKeyExpr.has('appleAIExtensionLoaded') };
 const showCommands: WatermarkEntry = { text: localize('watermark.showCommands', "Show All Commands"), id: 'workbench.action.showCommands' };
 const quickAccess: WatermarkEntry = { text: localize('watermark.quickAccess', "Go to File"), id: 'workbench.action.quickOpen' };
 const openFileNonMacOnly: WatermarkEntry = { text: localize('watermark.openFile', "Open File"), id: 'workbench.action.files.openFile', mac: false };
@@ -43,7 +43,7 @@ const toggleFullscreen: WatermarkEntry = { text: localize({ key: 'watermark.togg
 const showSettings: WatermarkEntry = { text: localize('watermark.showSettings', "Show Settings"), id: 'workbench.action.openSettings' };
 
 const noFolderEntries = [
-	openPearAIChat,
+	openappleAIChat,
 	bigChat,
 	prevChat,
 	showCommands,
@@ -55,7 +55,7 @@ const noFolderEntries = [
 ];
 
 const folderEntries = [
-	openPearAIChat,
+	openappleAIChat,
 	bigChat,
 	prevChat,
 	showCommands,
@@ -127,8 +127,8 @@ export class EditorGroupWatermark extends Disposable {
 	private async render(): Promise<void> {
 		// Wait for the all extensions to be activated
 		await this.extensionService.activateByEvent('onStartupFinished');
-		// TODO: @Himanshu-Singh-Chauhan - this should be set from inside the extension, test it later, if it works, remove this 
-		this.contextKeyService.createKey('pearAIExtensionLoaded', true); // Set a context key when the PearAI extension is loaded
+		// TODO: @Himanshu-Singh-Chauhan - this should be set from inside the extension, test it later, if it works, remove this
+		this.contextKeyService.createKey('appleAIExtensionLoaded', true); // Set a context key when the appleAI extension is loaded
 
 		const enabled = this.configurationService.getValue<boolean>('workbench.tips.enabled');
 

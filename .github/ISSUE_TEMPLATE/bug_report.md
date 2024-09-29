@@ -1,6 +1,6 @@
 ---
 name: 🐛 Bug report
-about: When PearAI crashes or has undesired side-effects, it's a bug
+about: When appleAI crashes or has undesired side-effects, it's a bug
 title: ""
 labels: "bug"
 assignees: "nang-dev,fryingpannn"

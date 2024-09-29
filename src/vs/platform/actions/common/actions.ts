@@ -86,7 +86,7 @@ export class MenuId {
 	static readonly LayoutControlMenuSubmenu = new MenuId('LayoutControlMenuSubmenu');
 	static readonly LayoutControlMenu = new MenuId('LayoutControlMenu');
 	static readonly MenubarMainMenu = new MenuId('MenubarMainMenu');
-	static readonly MenubarAppearanceMenu = new MenuId('MenubarAppearanceMenu');
+	static readonly MenubarApappleanceMenu = new MenuId('MenubarApappleanceMenu');
 	static readonly MenubarDebugMenu = new MenuId('MenubarDebugMenu');
 	static readonly MenubarEditMenu = new MenuId('MenubarEditMenu');
 	static readonly MenubarCopy = new MenuId('MenubarCopy');

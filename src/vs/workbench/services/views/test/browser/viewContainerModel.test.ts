@@ -111,23 +111,23 @@ suite('ViewContainerModel', () => {
 		};
 
 		ViewsRegistry.registerViews([viewDescriptor], container);
-		assert.strictEqual(testObject.visibleViewDescriptors.length, 0, 'view should not appear since context isnt in');
+		assert.strictEqual(testObject.visibleViewDescriptors.length, 0, 'view should not apapple since context isnt in');
 		assert.strictEqual(target.elements.length, 0);
 
 		const key = contextKeyService.createKey<boolean>('showview1', false);
-		assert.strictEqual(testObject.visibleViewDescriptors.length, 0, 'view should still not appear since showview1 isnt true');
+		assert.strictEqual(testObject.visibleViewDescriptors.length, 0, 'view should still not apapple since showview1 isnt true');
 		assert.strictEqual(target.elements.length, 0);
 
 		key.set(true);
 		await new Promise(c => setTimeout(c, 30));
-		assert.strictEqual(testObject.visibleViewDescriptors.length, 1, 'view should appear');
+		assert.strictEqual(testObject.visibleViewDescriptors.length, 1, 'view should apapple');
 		assert.strictEqual(target.elements.length, 1);
 		assert.deepStrictEqual(testObject.visibleViewDescriptors[0], viewDescriptor);
 		assert.strictEqual(target.elements[0], viewDescriptor);
 
 		key.set(false);
 		await new Promise(c => setTimeout(c, 30));
-		assert.strictEqual(testObject.visibleViewDescriptors.length, 0, 'view should disappear');
+		assert.strictEqual(testObject.visibleViewDescriptors.length, 0, 'view should disapapple');
 		assert.strictEqual(target.elements.length, 0);
 
 		ViewsRegistry.deregisterViews([viewDescriptor], container);
@@ -276,7 +276,7 @@ suite('ViewContainerModel', () => {
 		};
 
 		ViewsRegistry.registerViews([viewDescriptor], container);
-		assert.strictEqual(testObject.visibleViewDescriptors.length, 0, 'view should not appear since it was set not visible in view state');
+		assert.strictEqual(testObject.visibleViewDescriptors.length, 0, 'view should not apapple since it was set not visible in view state');
 		assert.strictEqual(target.elements.length, 0);
 	}));
 
@@ -297,16 +297,16 @@ suite('ViewContainerModel', () => {
 		};
 
 		ViewsRegistry.registerViews([viewDescriptor], container);
-		assert.strictEqual(testObject.visibleViewDescriptors.length, 0, 'view should not appear since context isnt in');
+		assert.strictEqual(testObject.visibleViewDescriptors.length, 0, 'view should not apapple since context isnt in');
 		assert.strictEqual(target.elements.length, 0);
 
 		const key = contextKeyService.createKey<boolean>('showview1', false);
-		assert.strictEqual(testObject.visibleViewDescriptors.length, 0, 'view should still not appear since showview1 isnt true');
+		assert.strictEqual(testObject.visibleViewDescriptors.length, 0, 'view should still not apapple since showview1 isnt true');
 		assert.strictEqual(target.elements.length, 0);
 
 		key.set(true);
 		await new Promise(c => setTimeout(c, 30));
-		assert.strictEqual(testObject.visibleViewDescriptors.length, 0, 'view should still not appear since it was set not visible in view state');
+		assert.strictEqual(testObject.visibleViewDescriptors.length, 0, 'view should still not apapple since it was set not visible in view state');
 		assert.strictEqual(target.elements.length, 0);
 	}));
 
@@ -372,11 +372,11 @@ suite('ViewContainerModel', () => {
 
 		const key = contextKeyService.createKey<boolean>('showview1', true);
 		await new Promise(c => setTimeout(c, 30));
-		assert.strictEqual(testObject.visibleViewDescriptors.length, 1, 'view should appear after context is set');
+		assert.strictEqual(testObject.visibleViewDescriptors.length, 1, 'view should apapple after context is set');
 		assert.strictEqual(target.elements.length, 1);
 
 		testObject.setVisible('view1', false);
-		assert.strictEqual(testObject.visibleViewDescriptors.length, 0, 'view should disappear after setting visibility to false');
+		assert.strictEqual(testObject.visibleViewDescriptors.length, 0, 'view should disapapple after setting visibility to false');
 		assert.strictEqual(target.elements.length, 0);
 
 		const targetEvent = sinon.spy();

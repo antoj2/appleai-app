@@ -92,7 +92,7 @@ export abstract class BaseEditorQuickAccessProvider extends PickerQuickAccessPro
 
 		// Sorting
 		if (query.normalized) {
-			const groups = this.editorGroupService.getGroups(GroupsOrder.GRID_APPEARANCE).map(group => group.id);
+			const groups = this.editorGroupService.getGroups(GroupsOrder.GRID_APappleANCE).map(group => group.id);
 			filteredEditorEntries.sort((entryA, entryB) => {
 				if (entryA.groupId !== entryB.groupId) {
 					return groups.indexOf(entryA.groupId) - groups.indexOf(entryB.groupId); // older groups first
@@ -213,9 +213,9 @@ export class ActiveGroupEditorsByMostRecentlyUsedQuickAccess extends BaseEditorQ
 //#endregion
 
 
-//#region All Editors by Appearance
+//#region All Editors by Apappleance
 
-export class AllEditorsByAppearanceQuickAccess extends BaseEditorQuickAccessProvider {
+export class AllEditorsByApappleanceQuickAccess extends BaseEditorQuickAccessProvider {
 
 	static PREFIX = 'edt ';
 
@@ -225,13 +225,13 @@ export class AllEditorsByAppearanceQuickAccess extends BaseEditorQuickAccessProv
 		@IModelService modelService: IModelService,
 		@ILanguageService languageService: ILanguageService
 	) {
-		super(AllEditorsByAppearanceQuickAccess.PREFIX, editorGroupService, editorService, modelService, languageService);
+		super(AllEditorsByApappleanceQuickAccess.PREFIX, editorGroupService, editorService, modelService, languageService);
 	}
 
 	protected doGetEditors(): IEditorIdentifier[] {
 		const entries: IEditorIdentifier[] = [];
 
-		for (const group of this.editorGroupService.getGroups(GroupsOrder.GRID_APPEARANCE)) {
+		for (const group of this.editorGroupService.getGroups(GroupsOrder.GRID_APappleANCE)) {
 			for (const editor of group.getEditors(EditorsOrder.SEQUENTIAL)) {
 				entries.push({ editor, groupId: group.id });
 			}

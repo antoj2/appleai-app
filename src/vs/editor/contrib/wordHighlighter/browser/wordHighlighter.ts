@@ -507,7 +507,7 @@ class WordHighlighter {
 
 	private _stopAll() {
 		// Remove any existing decorations
-		// TODO: @Yoyokrazy -- this triggers as notebooks scroll, causing highlights to disappear momentarily.
+		// TODO: @Yoyokrazy -- this triggers as notebooks scroll, causing highlights to disapapple momentarily.
 		// maybe a nb type check?
 		this._removeAllDecorations();
 

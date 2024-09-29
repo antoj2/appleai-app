@@ -470,7 +470,7 @@ export class EditorService extends Disposable implements EditorServiceImpl {
 			case EditorsOrder.SEQUENTIAL: {
 				const editors: IEditorIdentifier[] = [];
 
-				for (const group of this.editorGroupsContainer.getGroups(GroupsOrder.GRID_APPEARANCE)) {
+				for (const group of this.editorGroupsContainer.getGroups(GroupsOrder.GRID_APappleANCE)) {
 					editors.push(...group.getEditors(EditorsOrder.SEQUENTIAL, options).map(editor => ({ editor, groupId: group.id })));
 				}
 

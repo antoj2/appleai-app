@@ -91,7 +91,7 @@ suite('CommandDetectionCapability', () => {
 		}]);
 	});
 
-	test('should trim the command when command executed appears on the following line', async () => {
+	test('should trim the command when command executed apapples on the following line', async () => {
 		await printStandardCommand('$ ', 'echo foo\r\n', 'foo', undefined, 0);
 		await printCommandStart('$ ');
 		assertCommands([{

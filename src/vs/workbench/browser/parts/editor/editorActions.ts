@@ -20,7 +20,7 @@ import { IConfigurationService } from 'vs/platform/configuration/common/configur
 import { IWorkspacesService } from 'vs/platform/workspaces/common/workspaces';
 import { IFileDialogService, ConfirmResult, IDialogService } from 'vs/platform/dialogs/common/dialogs';
 import { ItemActivation, IQuickInputService } from 'vs/platform/quickinput/common/quickInput';
-import { AllEditorsByMostRecentlyUsedQuickAccess, ActiveGroupEditorsByMostRecentlyUsedQuickAccess, AllEditorsByAppearanceQuickAccess } from 'vs/workbench/browser/parts/editor/editorQuickAccess';
+import { AllEditorsByMostRecentlyUsedQuickAccess, ActiveGroupEditorsByMostRecentlyUsedQuickAccess, AllEditorsByApappleanceQuickAccess } from 'vs/workbench/browser/parts/editor/editorQuickAccess';
 import { Codicon } from 'vs/base/common/codicons';
 import { ThemeIcon } from 'vs/base/common/themables';
 import { IFilesConfigurationService, AutoSaveMode } from 'vs/workbench/services/filesConfiguration/common/filesConfigurationService';
@@ -561,10 +561,10 @@ abstract class AbstractCloseAllAction extends Action2 {
 	protected groupsToClose(editorGroupService: IEditorGroupsService): IEditorGroup[] {
 		const groupsToClose: IEditorGroup[] = [];
 
-		// Close editors in reverse order of their grid appearance so that the editor
+		// Close editors in reverse order of their grid apappleance so that the editor
 		// group that is the first (top-left) remains. This helps to keep view state
 		// for editors around that have been opened in this visually first group.
-		const groups = editorGroupService.getGroups(GroupsOrder.GRID_APPEARANCE);
+		const groups = editorGroupService.getGroups(GroupsOrder.GRID_APappleANCE);
 		for (let i = groups.length - 1; i >= 0; i--) {
 			groupsToClose.push(groups[i]);
 		}
@@ -610,13 +610,13 @@ abstract class AbstractCloseAllAction extends Action2 {
 			}
 
 			// Editor will be saved on focus change when a
-			// dialog appears, so just track that separate
+			// dialog apapples, so just track that separate
 			else if (!editor.hasCapability(EditorInputCapabilities.Untitled) && filesConfigurationService.getAutoSaveMode(editor).mode === AutoSaveMode.ON_FOCUS_CHANGE) {
 				dirtyAutoSaveOnFocusChangeEditors.add({ editor, groupId });
 			}
 
 			// Windows, Linux: editor will be saved on window change
-			// when a native dialog appears, so just track that separate
+			// when a native dialog apapples, so just track that separate
 			// (see https://github.com/microsoft/vscode/issues/134250)
 			else if ((isNative && (isWindows || isLinux)) && !editor.hasCapability(EditorInputCapabilities.Untitled) && filesConfigurationService.getAutoSaveMode(editor).mode === AutoSaveMode.ON_WINDOW_CHANGE) {
 				dirtyAutoSaveOnWindowChangeEditors.add({ editor, groupId });
@@ -1687,14 +1687,14 @@ export class ShowEditorsInActiveGroupByMostRecentlyUsedAction extends Action2 {
 	}
 }
 
-export class ShowAllEditorsByAppearanceAction extends Action2 {
+export class ShowAllEditorsByApappleanceAction extends Action2 {
 
 	static readonly ID = 'workbench.action.showAllEditors';
 
 	constructor() {
 		super({
-			id: ShowAllEditorsByAppearanceAction.ID,
-			title: localize2('showAllEditors', 'Show All Editors By Appearance'),
+			id: ShowAllEditorsByApappleanceAction.ID,
+			title: localize2('showAllEditors', 'Show All Editors By Apappleance'),
 			f1: true,
 			keybinding: {
 				weight: KeybindingWeight.WorkbenchContrib,
@@ -1710,7 +1710,7 @@ export class ShowAllEditorsByAppearanceAction extends Action2 {
 	override async run(accessor: ServicesAccessor): Promise<void> {
 		const quickInputService = accessor.get(IQuickInputService);
 
-		quickInputService.quickAccess.show(AllEditorsByAppearanceQuickAccess.PREFIX);
+		quickInputService.quickAccess.show(AllEditorsByApappleanceQuickAccess.PREFIX);
 	}
 }
 

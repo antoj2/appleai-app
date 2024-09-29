@@ -12,7 +12,7 @@ import { URI } from 'vs/base/common/uri';
 import { ILogService } from 'vs/platform/log/common/log';
 import { hasWorkspaceFileExtension } from 'vs/platform/workspace/common/workspace';
 
-export interface OpenCommandPipeArgs {
+export interface OpenCommandPiapplegs {
 	type: 'open';
 	fileURIs?: string[];
 	folderURIs?: string[];
@@ -26,16 +26,16 @@ export interface OpenCommandPipeArgs {
 	remoteAuthority?: string | null;
 }
 
-export interface OpenExternalCommandPipeArgs {
+export interface OpenExternalCommandPiapplegs {
 	type: 'openExternal';
 	uris: string[];
 }
 
-export interface StatusPipeArgs {
+export interface StatusPiapplegs {
 	type: 'status';
 }
 
-export interface ExtensionManagementPipeArgs {
+export interface ExtensionManagementPiapplegs {
 	type: 'extensionManagement';
 	list?: { showVersions?: boolean; category?: string };
 	install?: string[];
@@ -43,7 +43,7 @@ export interface ExtensionManagementPipeArgs {
 	force?: boolean;
 }
 
-export type PipeCommand = OpenCommandPipeArgs | StatusPipeArgs | OpenExternalCommandPipeArgs | ExtensionManagementPipeArgs;
+export type PipeCommand = OpenCommandPiapplegs | StatusPiapplegs | OpenExternalCommandPiapplegs | ExtensionManagementPiapplegs;
 
 export interface ICommandsExecuter {
 	executeCommand<T>(id: string, ...args: any[]): Promise<T>;
@@ -118,7 +118,7 @@ export class CLIServerBase {
 		});
 	}
 
-	private async open(data: OpenCommandPipeArgs): Promise<undefined> {
+	private async open(data: OpenCommandPiapplegs): Promise<undefined> {
 		const { fileURIs, folderURIs, forceNewWindow, diffMode, mergeMode, addMode, forceReuseWindow, gotoLineMode, waitMarkerFilePath, remoteAuthority } = data;
 		const urisToOpen: IWindowOpenable[] = [];
 		if (Array.isArray(folderURIs)) {
@@ -149,7 +149,7 @@ export class CLIServerBase {
 		this._commands.executeCommand('_remoteCLI.windowOpen', urisToOpen, windowOpenArgs);
 	}
 
-	private async openExternal(data: OpenExternalCommandPipeArgs): Promise<undefined> {
+	private async openExternal(data: OpenExternalCommandPiapplegs): Promise<undefined> {
 		for (const uriString of data.uris) {
 			const uri = URI.parse(uriString);
 			const urioOpen = uri.scheme === 'file' ? uri : uriString; // workaround for #112577
@@ -157,7 +157,7 @@ export class CLIServerBase {
 		}
 	}
 
-	private async manageExtensions(data: ExtensionManagementPipeArgs): Promise<string | undefined> {
+	private async manageExtensions(data: ExtensionManagementPiapplegs): Promise<string | undefined> {
 		const toExtOrVSIX = (inputs: string[] | undefined) => inputs?.map(input => /\.vsix$/i.test(input) ? URI.parse(input) : input);
 		const commandArgs = {
 			list: data.list,
@@ -168,7 +168,7 @@ export class CLIServerBase {
 		return await this._commands.executeCommand<string | undefined>('_remoteCLI.manageExtensions', commandArgs);
 	}
 
-	private async getStatus(data: StatusPipeArgs): Promise<string | undefined> {
+	private async getStatus(data: StatusPiapplegs): Promise<string | undefined> {
 		return await this._commands.executeCommand<string | undefined>('_remoteCLI.getSystemStatus');
 	}
 

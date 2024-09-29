@@ -11,7 +11,7 @@ export interface IUtilityProcessWorkerProcess {
 	readonly moduleId: string;
 
 	/**
-	 * The type of the process appears in the arguments of the
+	 * The type of the process apapples in the arguments of the
 	 * forked process to identify it easier.
 	 */
 	readonly type: string;

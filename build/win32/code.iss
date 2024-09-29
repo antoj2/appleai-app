@@ -1515,7 +1515,7 @@ begin
       begin
         Sleep(1000)
       end;
-      Log('Application appears not to be running.');
+      Log('Application apapples not to be running.');
 
       StopTunnelServiceIfNeeded();
 

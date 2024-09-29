@@ -1,9 +1,9 @@
 {
-  "name": "pearai",
+  "name": "appleai",
   "version": "1.89.1",
   "distro": "25c9442cad1fee4c5b7fd96dd526ae00022f881b",
   "author": {
-    "name": "PearAI"
+    "name": "appleAI"
   },
   "license": "EE",
   "main": "./out/main",

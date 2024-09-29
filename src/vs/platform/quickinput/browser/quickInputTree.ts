@@ -1616,7 +1616,7 @@ export class QuickInputTree extends Disposable {
 			linkHandler: (url) => {
 				this.linkOpenerDelegate(url);
 			},
-			appearance: {
+			apappleance: {
 				showPointer: true,
 			},
 			container: this._container,

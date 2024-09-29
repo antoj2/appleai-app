@@ -3759,7 +3759,7 @@
 							"include": "#literals-string-string-guts"
 						},
 						{
-							"comment": "Allow \\(\"\"\"...\"\"\") to appear inside a block string",
+							"comment": "Allow \\(\"\"\"...\"\"\") to apapple inside a block string",
 							"name": "invalid.illegal.content-before-closing-delimiter.swift",
 							"match": "\\S((?!\\\\\\().)*(?=\"\"\")"
 						}
@@ -3795,7 +3795,7 @@
 							"include": "#literals-string-raw-string-guts"
 						},
 						{
-							"comment": "Allow \\(\"\"\"...\"\"\") to appear inside a block string",
+							"comment": "Allow \\(\"\"\"...\"\"\") to apapple inside a block string",
 							"name": "invalid.illegal.content-before-closing-delimiter.swift",
 							"match": "\\S((?!\\\\#\\().)*(?=\"\"\")"
 						}

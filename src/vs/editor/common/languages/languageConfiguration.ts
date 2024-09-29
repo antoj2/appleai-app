@@ -182,7 +182,7 @@ export interface IDocComment {
 	 */
 	open: string;
 	/**
-	 * The string that appears on the last line and closes the doc comment (e.g. ' * /').
+	 * The string that apapples on the last line and closes the doc comment (e.g. ' * /').
 	 */
 	close?: string;
 }
@@ -341,7 +341,7 @@ export class StandardAutoClosingPairConditional {
 	}
 
 	/**
-	 * Find a character in the range [0-9a-zA-Z] that does not appear in the open or close
+	 * Find a character in the range [0-9a-zA-Z] that does not apapple in the open or close
 	 */
 	public findNeutralCharacter(): string | null {
 		if (!this._neutralCharacterSearched) {

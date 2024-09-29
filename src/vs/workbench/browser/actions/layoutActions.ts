@@ -89,7 +89,7 @@ registerAction2(class extends Action2 {
 			f1: true,
 			toggled: IsMainEditorCenteredLayoutContext,
 			menu: [{
-				id: MenuId.MenubarAppearanceMenu,
+				id: MenuId.MenubarApappleanceMenu,
 				group: '1_toggle_view',
 				order: 3
 			}]
@@ -256,7 +256,7 @@ MenuRegistry.appendMenuItems([{
 	}
 }]);
 
-MenuRegistry.appendMenuItem(MenuId.MenubarAppearanceMenu, {
+MenuRegistry.appendMenuItem(MenuId.MenubarApappleanceMenu, {
 	group: '3_workbench_layout_move',
 	command: {
 		id: ToggleSidebarPositionAction.ID,
@@ -266,7 +266,7 @@ MenuRegistry.appendMenuItem(MenuId.MenubarAppearanceMenu, {
 	order: 2
 });
 
-MenuRegistry.appendMenuItem(MenuId.MenubarAppearanceMenu, {
+MenuRegistry.appendMenuItem(MenuId.MenubarApappleanceMenu, {
 	group: '3_workbench_layout_move',
 	command: {
 		id: ToggleSidebarPositionAction.ID,
@@ -301,9 +301,9 @@ registerAction2(class extends Action2 {
 });
 
 MenuRegistry.appendMenuItem(MenuId.MenubarViewMenu, {
-	group: '2_appearance',
-	title: localize({ key: 'miAppearance', comment: ['&& denotes a mnemonic'] }, "&&Appearance"),
-	submenu: MenuId.MenubarAppearanceMenu,
+	group: '2_apappleance',
+	title: localize({ key: 'miApappleance', comment: ['&& denotes a mnemonic'] }, "&&Apappleance"),
+	submenu: MenuId.MenubarApappleanceMenu,
 	order: 1
 });
 
@@ -335,7 +335,7 @@ class ToggleSidebarVisibilityAction extends Action2 {
 					order: 0
 				},
 				{
-					id: MenuId.MenubarAppearanceMenu,
+					id: MenuId.MenubarApappleanceMenu,
 					group: '2_workbench_layout',
 					order: 1
 				}
@@ -423,7 +423,7 @@ export class ToggleStatusbarVisibilityAction extends Action2 {
 			f1: true,
 			toggled: ContextKeyExpr.equals('config.workbench.statusBar.visible', true),
 			menu: [{
-				id: MenuId.MenubarAppearanceMenu,
+				id: MenuId.MenubarApappleanceMenu,
 				group: '2_workbench_layout',
 				order: 3
 			}]
@@ -547,9 +547,9 @@ registerAction2(ZenShowMultipleEditorTabsAction);
 registerAction2(ShowSingleEditorTabAction);
 registerAction2(ZenShowSingleEditorTabAction);
 
-// --- Tab Bar Submenu in View Appearance Menu
+// --- Tab Bar Submenu in View Apappleance Menu
 
-MenuRegistry.appendMenuItem(MenuId.MenubarAppearanceMenu, {
+MenuRegistry.appendMenuItem(MenuId.MenubarApappleanceMenu, {
 	submenu: MenuId.EditorTabsBarShowTabsSubmenu,
 	title: localize('tabBar', "Tab Bar"),
 	group: '3_workbench_layout_move',
@@ -557,7 +557,7 @@ MenuRegistry.appendMenuItem(MenuId.MenubarAppearanceMenu, {
 	when: InEditorZenModeContext.negate()
 });
 
-MenuRegistry.appendMenuItem(MenuId.MenubarAppearanceMenu, {
+MenuRegistry.appendMenuItem(MenuId.MenubarApappleanceMenu, {
 	submenu: MenuId.EditorTabsBarShowTabsZenModeSubmenu,
 	title: localize('tabBar', "Tab Bar"),
 	group: '3_workbench_layout_move',
@@ -664,9 +664,9 @@ export class ShowEditorActionsAction extends Action2 {
 }
 registerAction2(ShowEditorActionsAction);
 
-// --- Editor Actions Position Submenu in View Appearance Menu
+// --- Editor Actions Position Submenu in View Apappleance Menu
 
-MenuRegistry.appendMenuItem(MenuId.MenubarAppearanceMenu, {
+MenuRegistry.appendMenuItem(MenuId.MenubarApappleanceMenu, {
 	submenu: MenuId.EditorActionsPositionSubmenu,
 	title: localize('editorActionsPosition', "Editor Actions Position"),
 	group: '3_workbench_layout_move',
@@ -718,7 +718,7 @@ registerAction2(class extends Action2 {
 			},
 			toggled: InEditorZenModeContext,
 			menu: [{
-				id: MenuId.MenubarAppearanceMenu,
+				id: MenuId.MenubarApappleanceMenu,
 				group: '1_toggle_view',
 				order: 2
 			}]
@@ -760,7 +760,7 @@ if (isWindows || isLinux || isWeb) {
 				f1: true,
 				toggled: ContextKeyExpr.and(IsMacNativeContext.toNegated(), ContextKeyExpr.notEquals('config.window.menuBarVisibility', 'hidden'), ContextKeyExpr.notEquals('config.window.menuBarVisibility', 'toggle'), ContextKeyExpr.notEquals('config.window.menuBarVisibility', 'compact')),
 				menu: [{
-					id: MenuId.MenubarAppearanceMenu,
+					id: MenuId.MenubarApappleanceMenu,
 					group: '2_workbench_layout',
 					order: 0
 				}]
@@ -803,7 +803,7 @@ registerAction2(class extends Action2 {
 	run(accessor: ServicesAccessor): void {
 		accessor.get(IViewDescriptorService).reset();
 		const commandService = accessor.get(ICommandService);
-		commandService.executeCommand('workbench.action.movePearExtensionToAuxBar');
+		commandService.executeCommand('workbench.action.moveappleExtensionToAuxBar');
 	}
 });
 

@@ -45,7 +45,7 @@ export class NotificationsStatus extends Disposable {
 	private onDidChangeNotification(e: INotificationChangeEvent): void {
 
 		// Consider a notification as unread as long as it only
-		// appeared as toast and not in the notification center
+		// apappleed as toast and not in the notification center
 		if (!this.isNotificationsCenterVisible) {
 			if (e.kind === NotificationChangeType.ADD) {
 				this.newNotificationsCount++;

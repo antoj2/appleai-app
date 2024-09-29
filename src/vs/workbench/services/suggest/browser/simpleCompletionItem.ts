@@ -8,7 +8,7 @@ import { ThemeIcon } from 'vs/base/common/themables';
 
 export interface ISimpleCompletion {
 	/**
-	 * The completion's label which appears on the left beside the icon.
+	 * The completion's label which apapples on the left beside the icon.
 	 */
 	label: string;
 	/**
@@ -16,7 +16,7 @@ export interface ISimpleCompletion {
 	 */
 	icon?: ThemeIcon;
 	/**
-	 * The completion's detail which appears on the right of the list.
+	 * The completion's detail which apapples on the right of the list.
 	 */
 	detail?: string;
 	/**

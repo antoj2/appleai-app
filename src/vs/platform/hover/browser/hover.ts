@@ -73,11 +73,11 @@ export class WorkbenchHoverDelegate extends Disposable implements IHoverDelegate
 				...overrideOptions.persistence
 			},
 			id,
-			appearance: {
-				...options.appearance,
+			apappleance: {
+				...options.apappleance,
 				compact: true,
 				skipFadeInAnimation: this.isInstantlyHovering(),
-				...overrideOptions.appearance
+				...overrideOptions.apappleance
 			}
 		}, focus);
 	}

@@ -268,7 +268,7 @@ export class EditorPart extends Part implements IEditorPart, IEditorGroupsView {
 				// make sure to just append them at the end so that all groups are returned properly
 				return distinct([...mostRecentActive, ...this.groups]);
 			}
-			case GroupsOrder.GRID_APPEARANCE: {
+			case GroupsOrder.GRID_APappleANCE: {
 				const views: IEditorGroupView[] = [];
 				if (this.gridWidget) {
 					this.fillGridNodes(views, this.gridWidget.getViews());
@@ -322,7 +322,7 @@ export class EditorPart extends Part implements IEditorPart, IEditorGroupsView {
 
 	private doFindGroupByLocation(location: GroupLocation, source: IEditorGroupView | GroupIdentifier, wrap?: boolean): IEditorGroupView | undefined {
 		const sourceGroupView = this.assertGroupView(source);
-		const groups = this.getGroups(GroupsOrder.GRID_APPEARANCE);
+		const groups = this.getGroups(GroupsOrder.GRID_APappleANCE);
 		const index = groups.indexOf(sourceGroupView);
 
 		switch (location) {
@@ -469,7 +469,7 @@ export class EditorPart extends Part implements IEditorPart, IEditorGroupsView {
 		countGroups(layout.groups);
 
 		// If we currently have too many groups, merge them into the last one
-		let currentGroupViews = this.getGroups(GroupsOrder.GRID_APPEARANCE);
+		let currentGroupViews = this.getGroups(GroupsOrder.GRID_APappleANCE);
 		if (layoutGroupsCount < currentGroupViews.length) {
 			const lastGroupInLayout = currentGroupViews[layoutGroupsCount - 1];
 			currentGroupViews.forEach((group, index) => {
@@ -478,7 +478,7 @@ export class EditorPart extends Part implements IEditorPart, IEditorGroupsView {
 				}
 			});
 
-			currentGroupViews = this.getGroups(GroupsOrder.GRID_APPEARANCE);
+			currentGroupViews = this.getGroups(GroupsOrder.GRID_APappleANCE);
 		}
 
 		const activeGroup = this.activeGroup;
@@ -1267,7 +1267,7 @@ export class EditorPart extends Part implements IEditorPart, IEditorGroupsView {
 	}
 
 	private notifyGroupIndexChange(): void {
-		this.getGroups(GroupsOrder.GRID_APPEARANCE).forEach((group, index) => group.notifyIndexChanged(index));
+		this.getGroups(GroupsOrder.GRID_APappleANCE).forEach((group, index) => group.notifyIndexChanged(index));
 	}
 
 	notifyGroupsLabelChange(newLabel: string) {
@@ -1408,7 +1408,7 @@ export class EditorPart extends Part implements IEditorPart, IEditorGroupsView {
 		this.updateContainer();
 
 		// Events for groups that got added
-		for (const groupView of this.getGroups(GroupsOrder.GRID_APPEARANCE)) {
+		for (const groupView of this.getGroups(GroupsOrder.GRID_APappleANCE)) {
 			if (!editorGroupViewsToReuse?.includes(groupView)) {
 				this._onDidAddGroup.fire(groupView);
 			}

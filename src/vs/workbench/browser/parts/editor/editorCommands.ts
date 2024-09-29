@@ -289,10 +289,10 @@ function registerActiveEditorMoveCopyCommand(): void {
 				}
 				break;
 			case 'center':
-				targetGroup = editorGroupService.getGroups(GroupsOrder.GRID_APPEARANCE)[(editorGroupService.count / 2) - 1];
+				targetGroup = editorGroupService.getGroups(GroupsOrder.GRID_APappleANCE)[(editorGroupService.count / 2) - 1];
 				break;
 			case 'position':
-				targetGroup = editorGroupService.getGroups(GroupsOrder.GRID_APPEARANCE)[(args.value ?? 1) - 1];
+				targetGroup = editorGroupService.getGroups(GroupsOrder.GRID_APappleANCE)[(args.value ?? 1) - 1];
 				break;
 		}
 
@@ -607,7 +607,7 @@ function registerFocusEditorGroupAtIndexCommands(): void {
 				}
 
 				// Group exists: just focus
-				const groups = editorGroupService.getGroups(GroupsOrder.GRID_APPEARANCE);
+				const groups = editorGroupService.getGroups(GroupsOrder.GRID_APappleANCE);
 				if (groups[groupIndex]) {
 					return groups[groupIndex].focus();
 				}

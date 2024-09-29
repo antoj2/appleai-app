@@ -35,7 +35,7 @@ export class ToggleStickyScroll extends Action2 {
 			},
 			menu: [
 				{ id: MenuId.CommandPalette },
-				{ id: MenuId.MenubarAppearanceMenu, group: '4_editor', order: 3 },
+				{ id: MenuId.MenubarApappleanceMenu, group: '4_editor', order: 3 },
 				{ id: MenuId.StickyScrollContext }
 			]
 		});

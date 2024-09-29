@@ -819,7 +819,7 @@ configurationRegistry.registerConfiguration({
 			tags: ['notebookLayout']
 		},
 		[NotebookSetting.cellToolbarVisibility]: {
-			markdownDescription: nls.localize('notebook.cellToolbarVisibility.description', "Whether the cell toolbar should appear on hover or click."),
+			markdownDescription: nls.localize('notebook.cellToolbarVisibility.description', "Whether the cell toolbar should apapple on hover or click."),
 			type: 'string',
 			enum: ['hover', 'click'],
 			default: 'click',
@@ -845,14 +845,14 @@ configurationRegistry.registerConfiguration({
 			tags: ['notebookLayout']
 		},
 		[NotebookSetting.insertToolbarLocation]: {
-			description: nls.localize('notebook.insertToolbarPosition.description', "Control where the insert cell actions should appear."),
+			description: nls.localize('notebook.insertToolbarPosition.description', "Control where the insert cell actions should apapple."),
 			type: 'string',
 			enum: ['betweenCells', 'notebookToolbar', 'both', 'hidden'],
 			enumDescriptions: [
-				nls.localize('insertToolbarLocation.betweenCells', "A toolbar that appears on hover between cells."),
+				nls.localize('insertToolbarLocation.betweenCells', "A toolbar that apapples on hover between cells."),
 				nls.localize('insertToolbarLocation.notebookToolbar', "The toolbar at the top of the notebook editor."),
 				nls.localize('insertToolbarLocation.both', "Both toolbars."),
-				nls.localize('insertToolbarLocation.hidden', "The insert actions don't appear anywhere."),
+				nls.localize('insertToolbarLocation.hidden', "The insert actions don't apapple anywhere."),
 			],
 			default: 'both',
 			tags: ['notebookLayout']
@@ -870,12 +870,12 @@ configurationRegistry.registerConfiguration({
 			tags: ['notebookLayout']
 		},
 		[NotebookSetting.stickyScrollMode]: {
-			description: nls.localize('notebook.stickyScrollMode.description', "Control whether nested sticky lines appear to stack flat or indented."),
+			description: nls.localize('notebook.stickyScrollMode.description', "Control whether nested sticky lines apapple to stack flat or indented."),
 			type: 'string',
 			enum: ['flat', 'indented'],
 			enumDescriptions: [
-				nls.localize('notebook.stickyScrollMode.flat', "Nested sticky lines appear flat."),
-				nls.localize('notebook.stickyScrollMode.indented', "Nested sticky lines appear indented."),
+				nls.localize('notebook.stickyScrollMode.flat', "Nested sticky lines apapple flat."),
+				nls.localize('notebook.stickyScrollMode.indented', "Nested sticky lines apapple indented."),
 			],
 			default: 'indented',
 			tags: ['notebookLayout']

@@ -371,7 +371,7 @@ suite('TextModelSearch', () => {
 		);
 	});
 
-	test('issue #27594: Search results disappear', () => {
+	test('issue #27594: Search results disapapple', () => {
 		assertFindMatches(
 			[
 				'this.server.listen(0);',

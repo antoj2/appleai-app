@@ -30,7 +30,7 @@ import {
 	CloseEditorsInOtherGroupsAction, CloseAllEditorsAction, MoveGroupLeftAction, MoveGroupRightAction, SplitEditorAction, JoinTwoGroupsAction, RevertAndCloseEditorAction,
 	NavigateBetweenGroupsAction, FocusActiveGroupAction, FocusFirstGroupAction, ResetGroupSizesAction, MinimizeOtherGroupsAction, FocusPreviousGroup, FocusNextGroup,
 	CloseLeftEditorsInGroupAction, OpenNextEditor, OpenPreviousEditor, NavigateBackwardsAction, NavigateForwardAction, NavigatePreviousAction, ReopenClosedEditorAction,
-	QuickAccessPreviousRecentlyUsedEditorInGroupAction, QuickAccessPreviousEditorFromHistoryAction, ShowAllEditorsByAppearanceAction, ClearEditorHistoryAction, MoveEditorRightInGroupAction, OpenNextEditorInGroup,
+	QuickAccessPreviousRecentlyUsedEditorInGroupAction, QuickAccessPreviousEditorFromHistoryAction, ShowAllEditorsByApappleanceAction, ClearEditorHistoryAction, MoveEditorRightInGroupAction, OpenNextEditorInGroup,
 	OpenPreviousEditorInGroup, OpenNextRecentlyUsedEditorAction, OpenPreviousRecentlyUsedEditorAction, MoveEditorToPreviousGroupAction,
 	MoveEditorToNextGroupAction, MoveEditorToFirstGroupAction, MoveEditorLeftInGroupAction, ClearRecentFilesAction, OpenLastEditorInGroup,
 	ShowEditorsInActiveGroupByMostRecentlyUsedAction, MoveEditorToLastGroupAction, OpenFirstEditorInGroup, MoveGroupUpAction, MoveGroupDownAction, FocusLastGroupAction, SplitEditorLeftAction, SplitEditorRightAction,
@@ -63,7 +63,7 @@ import { FloatingEditorClickMenu } from 'vs/workbench/browser/codeeditor';
 import { WorkbenchPhase, registerWorkbenchContribution2 } from 'vs/workbench/common/contributions';
 import { EditorAutoSave } from 'vs/workbench/browser/parts/editor/editorAutoSave';
 import { IQuickAccessRegistry, Extensions as QuickAccessExtensions } from 'vs/platform/quickinput/common/quickAccess';
-import { ActiveGroupEditorsByMostRecentlyUsedQuickAccess, AllEditorsByAppearanceQuickAccess, AllEditorsByMostRecentlyUsedQuickAccess } from 'vs/workbench/browser/parts/editor/editorQuickAccess';
+import { ActiveGroupEditorsByMostRecentlyUsedQuickAccess, AllEditorsByApappleanceQuickAccess, AllEditorsByMostRecentlyUsedQuickAccess } from 'vs/workbench/browser/parts/editor/editorQuickAccess';
 import { FileAccess } from 'vs/base/common/network';
 import { Codicon } from 'vs/base/common/codicons';
 import { registerIcon } from 'vs/platform/theme/common/iconRegistry';
@@ -152,11 +152,11 @@ quickAccessRegistry.registerQuickAccessProvider({
 });
 
 quickAccessRegistry.registerQuickAccessProvider({
-	ctor: AllEditorsByAppearanceQuickAccess,
-	prefix: AllEditorsByAppearanceQuickAccess.PREFIX,
+	ctor: AllEditorsByApappleanceQuickAccess,
+	prefix: AllEditorsByApappleanceQuickAccess.PREFIX,
 	contextKey: editorPickerContextKey,
 	placeholder: localize('editorQuickAccessPlaceholder', "Type the name of an editor to open it."),
-	helpEntries: [{ description: localize('allEditorsByAppearanceQuickAccess', "Show All Opened Editors By Appearance"), commandId: ShowAllEditorsByAppearanceAction.ID }]
+	helpEntries: [{ description: localize('allEditorsByApappleanceQuickAccess', "Show All Opened Editors By Apappleance"), commandId: ShowAllEditorsByApappleanceAction.ID }]
 });
 
 quickAccessRegistry.registerQuickAccessProvider({
@@ -193,7 +193,7 @@ registerAction2(OpenPreviousRecentlyUsedEditorInGroupAction);
 registerAction2(ReopenClosedEditorAction);
 registerAction2(ClearRecentFilesAction);
 
-registerAction2(ShowAllEditorsByAppearanceAction);
+registerAction2(ShowAllEditorsByApappleanceAction);
 registerAction2(ShowAllEditorsByMostRecentlyUsedAction);
 registerAction2(ShowEditorsInActiveGroupByMostRecentlyUsedAction);
 
@@ -669,7 +669,7 @@ MenuRegistry.appendMenuItem(MenuId.MenubarFileMenu, {
 
 // Layout menu
 MenuRegistry.appendMenuItem(MenuId.MenubarViewMenu, {
-	group: '2_appearance',
+	group: '2_apappleance',
 	title: localize({ key: 'miEditorLayout', comment: ['&& denotes a mnemonic'] }, "Editor &&Layout"),
 	submenu: MenuId.MenubarLayoutMenu,
 	order: 2

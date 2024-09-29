@@ -679,8 +679,8 @@ export interface SelectionKeyboardEvent extends KeyboardEvent {
 	__forceEvent?: boolean;
 }
 
-export function getSelectionKeyboardEvent(typeArg = 'keydown', preserveFocus?: boolean, pinned?: boolean): SelectionKeyboardEvent {
-	const e = new KeyboardEvent(typeArg);
+export function getSelectionKeyboardEvent(tyappleg = 'keydown', preserveFocus?: boolean, pinned?: boolean): SelectionKeyboardEvent {
+	const e = new KeyboardEvent(tyappleg);
 	(<SelectionKeyboardEvent>e).preserveFocus = preserveFocus;
 	(<SelectionKeyboardEvent>e).pinned = pinned;
 	(<SelectionKeyboardEvent>e).__forceEvent = true;

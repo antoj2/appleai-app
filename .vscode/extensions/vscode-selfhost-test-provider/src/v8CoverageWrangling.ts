@@ -184,7 +184,7 @@ export class OffsetToPosition {
 	}
 
 	/**
-	 * Gets the line the offset appears on.
+	 * Gets the line the offset apapples on.
 	 */
 	public getLineOfOffset(offset: number): number {
 		let low = 0;

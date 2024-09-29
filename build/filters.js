@@ -26,7 +26,7 @@ module.exports.all = [
 	'!out*/**',
 	'!test/**/out/**',
 	'!**/node_modules/**',
-	'!**/extensions/pearai-extension/**'
+	'!**/extensions/appleai-extension/**'
 ];
 
 module.exports.unicodeFilter = [

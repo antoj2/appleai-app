@@ -189,7 +189,7 @@ export class BulkFileOperations {
 						// noop -> "soft" rename to something that already exists
 						continue;
 					}
-					// map newResource onto oldResource so that text-edit appear for
+					// map newResource onto oldResource so that text-edit apapple for
 					// the same file element
 					newToOldUri.set(edit.newResource, uri);
 

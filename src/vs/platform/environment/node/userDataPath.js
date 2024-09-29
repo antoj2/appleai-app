@@ -51,7 +51,7 @@
 
 			// 0. Running out of sources has a fixed productName
 			if (process.env['VSCODE_DEV']) {
-				productName = 'pearai-dev';
+				productName = 'appleai-dev';
 			}
 
 			// 1. Support portable mode

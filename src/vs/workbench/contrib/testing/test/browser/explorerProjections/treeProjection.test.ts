@@ -57,7 +57,7 @@ suite('Workbench - Testing Explorer Hierarchal by Location Projection', () => {
 		]);
 	});
 
-	test('updates render if second test provider appears', async () => {
+	test('updates render if second test provider apapples', async () => {
 		harness.flush();
 		harness.pushDiff({
 			op: TestDiffOpType.Add,

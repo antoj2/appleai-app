@@ -688,7 +688,7 @@ export class EditSessionsContribution extends Disposable implements IWorkbenchCo
 
 		for (const repository of this.scmService.repositories) {
 			// Look through all resource groups and compute which files were added/modified/deleted
-			const trackedUris = this.getChangedResources(repository); // A URI might appear in more than one resource group
+			const trackedUris = this.getChangedResources(repository); // A URI might apapple in more than one resource group
 
 			const workingChanges: Change[] = [];
 
@@ -792,7 +792,7 @@ export class EditSessionsContribution extends Disposable implements IWorkbenchCo
 		return repository.provider.groups.reduce((resources, resourceGroups) => {
 			resourceGroups.resources.forEach((resource) => resources.add(resource.sourceUri));
 			return resources;
-		}, new Set<URI>()); // A URI might appear in more than one resource group
+		}, new Set<URI>()); // A URI might apapple in more than one resource group
 	}
 
 	private hasEditSession() {

@@ -215,7 +215,7 @@ export interface IEditorService {
 
 	/**
 	 * All editors that are opened across all editor groups in sequential order
-	 * of appearance.
+	 * of apappleance.
 	 *
 	 * This includes active as well as inactive editors in each editor group.
 	 */

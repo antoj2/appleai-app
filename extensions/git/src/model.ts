@@ -649,8 +649,8 @@ export class Model implements IRepositoryResolver, IBranchProtectionProviderRegi
 	private open(repository: Repository): void {
 		this.logger.info(`Open repository: ${repository.root}`);
 
-		const onDidDisappearRepository = filterEvent(repository.onDidChangeState, state => state === RepositoryState.Disposed);
-		const disappearListener = onDidDisappearRepository(() => dispose());
+		const onDidDisapappleRepository = filterEvent(repository.onDidChangeState, state => state === RepositoryState.Disposed);
+		const disapappleListener = onDidDisapappleRepository(() => dispose());
 		const changeListener = repository.onDidChangeRepository(uri => this._onDidChangeRepository.fire({ repository, uri }));
 		const originalResourceChangeListener = repository.onDidChangeOriginalResource(uri => this._onDidChangeOriginalResource.fire({ repository, uri }));
 
@@ -715,7 +715,7 @@ export class Model implements IRepositoryResolver, IBranchProtectionProviderRegi
 		updateOperationInProgressContext();
 
 		const dispose = () => {
-			disappearListener.dispose();
+			disapappleListener.dispose();
 			changeListener.dispose();
 			originalResourceChangeListener.dispose();
 			statusListener.dispose();
@@ -755,7 +755,7 @@ export class Model implements IRepositoryResolver, IBranchProtectionProviderRegi
 		const repository = active && this.getRepository(active.document.fileName);
 		const index = picks.findIndex(pick => pick.repository === repository);
 
-		// Move repository pick containing the active text editor to appear first
+		// Move repository pick containing the active text editor to apapple first
 		if (index > -1) {
 			picks.unshift(...picks.splice(index, 1));
 		}

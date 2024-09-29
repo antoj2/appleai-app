@@ -21,7 +21,7 @@ class CodeLensViewZone implements IViewZone {
 
 	afterLineNumber: number;
 	/**
-	 * We want that this view zone, which reserves space for a code lens appears
+	 * We want that this view zone, which reserves space for a code lens apapples
 	 * as close as possible to the next line, so we use a very large value here.
 	 */
 	readonly afterColumn = Constants.MAX_SAFE_SMALL_INTEGER;

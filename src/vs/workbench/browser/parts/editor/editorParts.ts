@@ -476,7 +476,7 @@ export class EditorParts extends MultiWindowParts<EditorPart> implements IEditor
 		if (this._parts.size > 1) {
 			let parts: EditorPart[];
 			switch (order) {
-				case GroupsOrder.GRID_APPEARANCE: // we currently do not have a way to compute by appearance over multiple windows
+				case GroupsOrder.GRID_APappleANCE: // we currently do not have a way to compute by apappleance over multiple windows
 				case GroupsOrder.CREATION_TIME:
 					parts = this.parts;
 					break;
@@ -566,7 +566,7 @@ export class EditorParts extends MultiWindowParts<EditorPart> implements IEditor
 	findGroup(scope: IFindGroupScope, source: IEditorGroupView | GroupIdentifier = this.activeGroup, wrap?: boolean): IEditorGroupView | undefined {
 		const sourcePart = this.getPart(source);
 		if (this._parts.size > 1) {
-			const groups = this.getGroups(GroupsOrder.GRID_APPEARANCE);
+			const groups = this.getGroups(GroupsOrder.GRID_APappleANCE);
 
 			// Ensure that FIRST/LAST dispatches globally over all parts
 			if (scope.location === GroupLocation.FIRST || scope.location === GroupLocation.LAST) {

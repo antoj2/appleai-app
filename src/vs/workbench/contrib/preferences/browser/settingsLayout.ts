@@ -99,8 +99,8 @@ export const tocData: ITOCEntry<string> = {
 			settings: ['workbench.*'],
 			children: [
 				{
-					id: 'workbench/appearance',
-					label: localize('appearance', "Appearance"),
+					id: 'workbench/apappleance',
+					label: localize('apappleance', "Apappleance"),
 					settings: ['workbench.activityBar.*', 'workbench.*color*', 'workbench.fontAliasing', 'workbench.iconTheme', 'workbench.sidebar.location', 'workbench.*.visible', 'workbench.tips.enabled', 'workbench.tree.*', 'workbench.view.*']
 				},
 				{

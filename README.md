@@ -1,40 +1,40 @@
-# PearAI: The Open Source AI-Powered Code Editor
+# appleAI: The Open Source AI-Powered Code Editor
 
-Supercharge your development with an editor designed for less coding, using AI. PearAI is forked from VSCode and Continue, and aims to reduce the time from ideation to conception for your product development by achieving the most seamless integration with AI.
+Supercharge your development with an editor designed for less coding, using AI. appleAI is forked from VSCode, Continue, and PearAI, and aims to reduce the time from ideation to conception for your product development by achieving the most seamless integration with AI.
 
-To download the full app, visit our homepage at https://trypear.ai.
+To download the full app, visit our homepage at https://tryapple.ai.
 
 ## Features
-* **Knows your code** - Pear has context on your codebase so you can ask questions directly (code is stored locally on your computer).
-* **UI/UX focused** - Pear puts the user experience first, making developing as seamless as possible.
-* **Familiar feel** - Pear is a fork of VSCode, so you can pick up exactly where you left off.
+* **Knows your code** - apple has context on your codebase so you can ask questions directly (code is stored locally on your computer).
+* **UI/UX focused** - apple puts the user experience first, making developing as seamless as possible.
+* **Familiar feel** - apple is a fork of VSCode, so you can pick up exactly where you left off.
 
-See all features [here](https://trypear.ai/docs).
+See all features [here](https://tryapple.ai/docs).
 
 ## Master Doc
 
-Our [Master Document](https://docs.google.com/document/d/14jusGNbGRPT8X6GgEDbP1iab5q4X7_y-eFXK7Ky57IQ/edit) contains all links relevant to PearAI.
+Our [Master Document](https://docs.google.com/document/d/14jusGNbGRPT8X6GgEDbP1iab5q4X7_y-eFXK7Ky57IQ/edit) contains all links relevant to appleAI.
 
 ## Contributing
 
-We welcome contributions from the community! Whether you're fixing a bug, improving the documentation, or adding a new feature, we appreciate your help in making PearAI better. There is a lot of context involved and we understand it can be overwhelming when first trying to join the project. Here is a quick summary of key information and how we currently work together:
-- Pan and Nang conduct "Quests", which are 1-3 weeks sprints. We will pick out the current highest priority issues for these quests, ping everyone in our [Discord]([url](https://discord.gg/7QMraJUsQt)), and ask for applications to participate in them. The chosen people will help finish the tasks alongside us, participating in calls and working together. If help is needed, we may add more people to the quest. You can see the current open quests [here](https://github.com/orgs/trypear/projects?query=is%3Aopen).
-- Outside of dedicated Quests, we also have a bunch of issues ([good first ones](https://github.com/trypear/pearai-app/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)) which are free to tackle. Make sure to leave a comment indicating you're working on it (check for existing comments also). You can raise a PR anytime and we usually review them pretty quickly.
+We welcome contributions from the community! Whether you're fixing a bug, improving the documentation, or adding a new feature, we appreciate your help in making appleAI better. There is a lot of context involved and we understand it can be overwhelming when first trying to join the project. Here is a quick summary of key information and how we currently work together:
+- Pan and Nang conduct "Quests", which are 1-3 weeks sprints. We will pick out the current highest priority issues for these quests, ping everyone in our [Discord]([url](https://discord.gg/7QMraJUsQt)), and ask for applications to participate in them. The chosen people will help finish the tasks alongside us, participating in calls and working together. If help is needed, we may add more people to the quest. You can see the current open quests [here](https://github.com/orgs/tryapple/projects?query=is%3Aopen).
+- Outside of dedicated Quests, we also have a bunch of issues ([good first ones](https://github.com/tryapple/appleai-app/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)) which are free to tackle. Make sure to leave a comment indicating you're working on it (check for existing comments also). You can raise a PR anytime and we usually review them pretty quickly.
 - We have a lot on our plate so it's easy for us to miss something. The best way to get our attention is to ping us directly in our Discord server.
 
-**Please review our coding [Contributing Guide](CONTRIBUTING.md) to set up your coding environment.** For any questions, join the [PearAI Discord](https://discord.gg/7QMraJUsQt)!
+**Please review our coding [Contributing Guide](CONTRIBUTING.md) to set up your coding environment.** For any questions, join the [appleAI Discord](https://discord.gg/7QMraJUsQt)!
 
 Curious about our stack?
-- PearAI is in TypeScript/Electron.js
-- PearAI landing page is Next.js/React with Supabase auth (TailwindCSS + Shadcn)
-- PearAI backend is a Python Flask server with Supabase database
+- appleAI is in TypeScript/Electron.js
+- appleAI landing page is Next.js/React with Supabase auth (TailwindCSS + Shadcn)
+- appleAI backend is a Python Flask server with Supabase database
 - Logging/Telemetry is done with Axiom
 
 ## License
-Pear OSS is licensed under the Apache 2.0 license. See the LICENSE file for details.
+apple OSS is licensed under the Apache 2.0 license. See the LICENSE file for details.
 
 ## Contact
-For any questions or issues, please open an issue or reach out in the PearAI [Discord](https://discord.gg/7QMraJUsQt).
+For any questions or issues, please open an issue or reach out in the appleAI [Discord](https://discord.gg/7QMraJUsQt).
 
 ## Acknowledgements
 
@@ -99,6 +99,9 @@ Thanks to these wonderful people who have contributed to this project:
 - [holger](https://github.com/holger)
 - [TyDunn](https://github.com/TyDunn)
 - [AkMoh](https://github.com/AkMoh)
+
+Sidenote: this is a joke.
+Just download [continue](https://github.com/continuedev/continue) (the original) or even better, learn to program. AI is stupid.
 
 Feel free to join them and contribute!
 

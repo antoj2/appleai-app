@@ -152,7 +152,7 @@ export const enum GroupsOrder {
 	/**
 	 * Groups sorted by grid widget order
 	 */
-	GRID_APPEARANCE
+	GRID_APappleANCE
 }
 
 export interface IEditorSideGroup {
@@ -717,7 +717,7 @@ export interface IEditorGroup {
 	readonly stickyCount: number;
 
 	/**
-	 * All opened editors in the group in sequential order of their appearance.
+	 * All opened editors in the group in sequential order of their apappleance.
 	 */
 	readonly editors: readonly EditorInput[];
 

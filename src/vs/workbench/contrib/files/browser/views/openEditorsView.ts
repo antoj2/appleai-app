@@ -335,7 +335,7 @@ export class OpenEditorsView extends ViewPane {
 
 	private getElements(): Array<IEditorGroup | OpenEditor> {
 		this.elements = [];
-		this.editorGroupService.getGroups(GroupsOrder.GRID_APPEARANCE).forEach(g => {
+		this.editorGroupService.getGroups(GroupsOrder.GRID_APappleANCE).forEach(g => {
 			if (this.showGroups) {
 				this.elements.push(g);
 			}

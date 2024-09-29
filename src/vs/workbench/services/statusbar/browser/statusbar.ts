@@ -55,7 +55,7 @@ export interface IStatusbarEntryLocation {
 
 	/**
 	 * Whether to move the entry close to the location
-	 * so that it appears as if both this entry and
+	 * so that it apapples as if both this entry and
 	 * the location belong to each other.
 	 */
 	compact?: boolean;
@@ -71,7 +71,7 @@ export interface IStatusbarEntryPriority {
 
 	/**
 	 * The main priority of the entry that
-	 * defines the order of appearance:
+	 * defines the order of apappleance:
 	 * either a number or a reference to
 	 * another status bar entry to position
 	 * relative to.
@@ -184,7 +184,7 @@ export interface IStatusbarEntry {
 	readonly kind?: StatusbarEntryKind;
 
 	/**
-	 * Enables the status bar entry to appear in all opened windows. Automatically will add
+	 * Enables the status bar entry to apapple in all opened windows. Automatically will add
 	 * the entry to new auxiliary windows opening.
 	 */
 	readonly showInAllWindows?: boolean;

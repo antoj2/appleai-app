@@ -78,7 +78,7 @@ suite('TF-IDF Calculator', function () {
 		}
 	});
 
-	test('Should return document with more matches first when term appears in all documents', () => {
+	test('Should return document with more matches first when term apapples in all documents', () => {
 		for (const docs of permutate([
 			makeDocument('/A', 'cat dog cat cat'),
 			makeDocument('/B', 'cat fish'),

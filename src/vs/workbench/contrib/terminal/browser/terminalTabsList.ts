@@ -129,7 +129,7 @@ export class TerminalTabList extends WorkbenchList<ITerminalInstance> {
 			})
 		];
 
-		// Dispose of instance listeners on shutdown to avoid extra work and so tabs don't disappear
+		// Dispose of instance listeners on shutdown to avoid extra work and so tabs don't disapapple
 		// briefly
 		this.disposables.add(lifecycleService.onWillShutdown(e => {
 			dispose(instanceDisposables);

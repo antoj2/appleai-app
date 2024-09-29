@@ -14,10 +14,10 @@
   "contributes": {
     "themes": [
       {
-        "id": "Default PearAI Dark",
-        "label": "%pearAIDarkThemeLabel%",
+        "id": "Default appleAI Dark",
+        "label": "%appleAIDarkThemeLabel%",
         "uiTheme": "vs-dark",
-        "path": "./themes/pearai_dark.json"
+        "path": "./themes/appleai_dark.json"
       },
       {
         "id": "Default Dark+",
@@ -32,10 +32,10 @@
         "path": "./themes/dark_modern.json"
       },
       {
-        "id": "Default PearAI Light",
-        "label": "%pearAILightThemeLabel%",
+        "id": "Default appleAI Light",
+        "label": "%appleAILightThemeLabel%",
         "uiTheme": "vs",
-        "path": "./themes/pearai_light.json"
+        "path": "./themes/appleai_light.json"
       },
       {
         "id": "Default Light+",

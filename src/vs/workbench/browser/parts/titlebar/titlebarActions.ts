@@ -108,7 +108,7 @@ class ToggleCustomTitleBar extends Action2 {
 			toggled: TitleBarVisibleContext,
 			menu: [
 				{
-					id: MenuId.MenubarAppearanceMenu,
+					id: MenuId.MenubarApappleanceMenu,
 					order: 6,
 					when: ContextKeyExpr.or(
 						ContextKeyExpr.and(

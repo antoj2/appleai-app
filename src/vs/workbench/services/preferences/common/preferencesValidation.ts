@@ -85,8 +85,8 @@ export function getInvalidTypeError(value: any, type: undefined | string | strin
 		return;
 	}
 
-	const typeArr = Array.isArray(type) ? type : [type];
-	if (!typeArr.some(_type => valueValidatesAsType(value, _type))) {
+	const tyappler = Array.isArray(type) ? type : [type];
+	if (!tyappler.some(_type => valueValidatesAsType(value, _type))) {
 		return nls.localize('invalidTypeError', "Setting has an invalid type, expected {0}. Fix in JSON.", JSON.stringify(type));
 	}
 
